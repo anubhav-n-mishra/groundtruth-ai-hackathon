@@ -634,7 +634,7 @@ curl -X POST "http://localhost:8000/generate-report" \
 
 ---
 
-## 📝 Configuration Guide
+##  Configuration Guide
 
 ### Full Configuration Schema
 
@@ -728,7 +728,7 @@ dashboard:
 
 ---
 
-## 📊 Sample Output
+## Sample Output
 
 ### Generated Files
 
@@ -742,7 +742,7 @@ dashboard:
 ```
 ┌─────────────────────────────────────────────┐
 │                                             │
-│            📱 Scan for Live Dashboard       │
+│             Scan for Live Dashboard       │
 │                                             │
 │               ┌───────────┐                 │
 │               │ █▀▀▀▀▀▀█ │                 │
@@ -759,7 +759,7 @@ dashboard:
 
 ---
 
-## 🔧 Environment Variables
+##  Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
@@ -777,7 +777,7 @@ dashboard:
 
 
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -793,12 +793,6 @@ dashboard:
 ## 📄 License
 
 MIT License - Free for personal and commercial use.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our contributing guidelines before submitting PRs.
 
 ---
 
