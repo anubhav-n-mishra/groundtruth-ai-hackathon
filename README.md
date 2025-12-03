@@ -1,4 +1,4 @@
-# 🎯 Automated Insight Engine
+# Automated Insight Engine
 
 An AI-powered data analysis and reporting platform that transforms raw data from **multiple sources (CSV, SQL, Databases)** into actionable business insights with downloadable PowerPoint presentations, **QR-linked live dashboards**, and **AI-generated voice briefings**.
 
@@ -29,7 +29,7 @@ An AI-powered data analysis and reporting platform that transforms raw data from
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 **Challenge:** Organizations collect vast amounts of performance data (marketing campaigns, sales, web analytics) but struggle to:
 
@@ -45,7 +45,7 @@ An AI-powered data analysis and reporting platform that transforms raw data from
 
 ---
 
-## 💡 Solution Approach
+##  Solution Approach
 
 ### Design Philosophy
 
@@ -71,47 +71,47 @@ An AI-powered data analysis and reporting platform that transforms raw data from
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🔄 Multi-Source Data Ingestion
+###  Multi-Source Data Ingestion
 - **CSV Files:** Direct file upload or path reference
 - **SQL Databases:** PostgreSQL, MySQL, SQLite, SQL Server via SQLAlchemy
 - **Cloud Databases:** BigQuery, Snowflake, Redshift (coming soon)
 - **Data Warehouses:** Connect to existing enterprise data infrastructure
 
-### 📊 Intelligent Analysis
+###  Intelligent Analysis
 - **Derived Metrics:** Compute CTR, CPC, ROAS, and custom KPIs from raw data
 - **Period Comparison:** Automatic week-over-week, month-over-month analysis
 - **Impact Scoring:** Rank insights by business significance
 - **Dimension Drill-down:** Analyze by campaign, geo, product, or any dimension
 
-### 🤖 AI-Powered Narrative Generation
+###  AI-Powered Narrative Generation
 - **Google Gemini 2.0 Flash:** Primary LLM for narrative generation
 - **OpenAI GPT-4.1:** Alternative LLM support
 - **Structured Output:** Consistent JSON format for headlines, bullets, recommendations
 - **Fallback Mode:** Rule-based narratives when API is unavailable
 
-### 📑 Professional PowerPoint Reports
+###  Professional PowerPoint Reports
 - **Branded Slides:** Customizable title, body, and table slides
 - **Data Tables:** Ranked insights with color-coded performance indicators
 - **Executive Summary:** AI-generated headline and key findings
 - **Actionable Recommendations:** Data-driven next steps
 
-### 📱 QR Code Integration (NEW)
+###  QR Code Integration 
 - **Live Dashboard Access:** QR code on the final slide links to a private web dashboard
 - **Secure Access:** Dashboard only accessible via the QR code (no public URL)
 - **Real-time Data:** View live data updates without regenerating the report
 - **Mobile-Friendly:** Scan from phone to view dashboard on-the-go
 - **Session-Based:** Each report generates a unique dashboard session
 
-### 🎙️ Voice Briefing (NEW)
+###  Voice Briefing 
 - **AI Voice Synthesis:** Powered by Murf AI's Text-to-Speech API
 - **30-Second Summary:** Concise audio overview of key insights
 - **MP3 Download:** Audio file alongside PPTX for mobile playback
 - **Hands-Free Consumption:** Perfect for listening during commute or before meetings
 - **Professional Quality:** Natural-sounding AI voices
 
-### 🖥️ Web Dashboard (NEW)
+###  Web Dashboard 
 - **QR-Gated Access:** Private dashboard accessible only via QR code link
 - **Interactive Charts:** Visualize trends and comparisons
 - **Drill-Down Analysis:** Explore data by any dimension
@@ -146,9 +146,6 @@ An AI-powered data analysis and reporting platform that transforms raw data from
 | **MySQL** | mysql-connector | ✅ Supported |
 | **SQLite** | Built-in | ✅ Supported |
 | **SQL Server** | pyodbc | ✅ Supported |
-| **BigQuery** | google-cloud-bigquery | 🔜 Coming Soon |
-| **Snowflake** | snowflake-connector | 🔜 Coming Soon |
-| **Redshift** | redshift-connector | 🔜 Coming Soon |
 
 ### AI/ML Integration
 | Technology | Version | Purpose |
@@ -303,7 +300,7 @@ dataset:
 
 ---
 
-## 📊 Methodology
+##  Methodology
 
 ### Phase 1: Multi-Source Data Ingestion
 ```
@@ -408,15 +405,15 @@ Narrative + Insights → PPTX Slides → QR Code → Dashboard Session → Saved
 
 ### Dashboard Features
 
-- 📈 Interactive trend charts
-- 🔍 Drill-down by dimensions
-- 📊 Comparison views (current vs previous)
-- 📥 Data export (CSV, Excel)
-- 🔄 Refresh for latest data
+-  Interactive trend charts
+-  Drill-down by dimensions
+-  Comparison views (current vs previous)
+-  Data export (CSV, Excel)
+-  Refresh for latest data
 
 ---
 
-## 🎙️ Voice Briefing System
+##  Voice Briefing System
 
 ### Murf AI Integration
 
@@ -454,10 +451,10 @@ save_path = "static/reports/briefing_20251203_123456.mp3"
 
 ### Use Cases
 
-- 🚗 Listen during commute to client meeting
-- 📱 Quick refresh before presentations
-- 👂 Accessibility for visually impaired users
-- ⏰ Time-constrained stakeholder updates
+-  Listen during commute to client meeting
+-  Quick refresh before presentations
+-  Accessibility for visually impaired users
+-  Time-constrained stakeholder updates
 
 ---
 
@@ -510,7 +507,7 @@ automated-insight-engine/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -778,35 +775,7 @@ dashboard:
 
 ---
 
-## 🗺️ Roadmap
 
-### ✅ Completed
-- [x] CSV data ingestion
-- [x] Polars + DuckDB processing
-- [x] Multi-source joins
-- [x] Derived metrics computation
-- [x] Period comparison analysis
-- [x] Insight ranking with impact scores
-- [x] Gemini 2.0 narrative generation
-- [x] PowerPoint report generation
-- [x] Web frontend for testing
-
-### 🚧 In Progress
-- [ ] SQL database connectors (PostgreSQL, MySQL)
-- [ ] QR code generation and embedding
-- [ ] Dashboard web application
-- [ ] Murf AI voice briefing integration
-
-### 🔜 Coming Soon
-- [ ] BigQuery, Snowflake, Redshift connectors
-- [ ] Custom branding/themes for reports
-- [ ] Scheduled report generation
-- [ ] Email delivery of reports
-- [ ] Multi-language support
-- [ ] Custom voice options for briefings
-- [ ] Mobile app for dashboard access
-
----
 
 ## 🐛 Troubleshooting
 
@@ -839,6 +808,6 @@ For questions or support, please open an issue on GitHub.
 
 ---
 
-Built with ❤️ using FastAPI, Polars, DuckDB, Google Gemini, and Murf AI
+Built with ❤️ Anubhav Mishra
 
 **Repository:** [github.com/anubhav-n-mishra/groundtruth-ai-hackathon](https://github.com/anubhav-n-mishra/groundtruth-ai-hackathon)
