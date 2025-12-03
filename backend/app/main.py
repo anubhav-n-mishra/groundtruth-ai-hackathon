@@ -435,9 +435,9 @@ async def generate_report_endpoint(
                 "recommendation": narrative.recommendation
             }
             
-            # Create session
+            # Create session - use narrative title instead of config.title
             session = session_manager.create_session(
-                title=config.title,
+                title=narrative.title,
                 insights=insights_data.get("insights", []),
                 metrics_summary=insights_data.get("summary", {}),
                 narrative=narrative_dict
