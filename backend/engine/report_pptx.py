@@ -559,7 +559,8 @@ def build_report(
     include_qr: bool = True,
     base_url: str = "http://localhost:8000",
     session_id: Optional[str] = None,
-    qr_code_path: Optional[str] = None
+    qr_code_path: Optional[str] = None,
+    dashboard_url: Optional[str] = None
 ) -> str:
     """Build a complete PowerPoint report with charts and QR code."""
     logger.info("Building PowerPoint report")
@@ -607,7 +608,7 @@ def build_report(
     # 8. QR Code
     if include_qr:
         try:
-            add_qr_code_slide(prs, session_id=session_id, base_url=base_url, qr_image_path=qr_code_path)
+            add_qr_code_slide(prs, session_id=session_id, base_url=base_url, qr_image_path=qr_code_path, dashboard_url=dashboard_url)
         except Exception as e:
             logger.warning(f"Failed to add QR code slide: {e}")
     
@@ -665,6 +666,7 @@ def generate_report(
         output_dir,
         include_qr=include_qr,
         session_id=session_id,
-        qr_code_path=qr_code_path
+        qr_code_path=qr_code_path,
+        dashboard_url=dashboard_url
     )
 
